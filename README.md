@@ -30,5 +30,4 @@ Personal-Portfolio/
 ├── index.html         # Main HTML file
 ├── style.css          # Custom styles
 ├── script.js          # JavaScript functionality (if any)
-├── assets/            # Images and other assets
 └── README.md          # Project documentation
