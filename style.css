@@ -337,103 +337,57 @@ section .title::after{
     }
 }
 
-/* skills section styling */
-.skills .title::after {
-    content: "what i know";
-}
-
-.skills .skills-content .column {
-    width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.skills .skills-content .left p {
-    text-align: justify;
-}
-
-.skills .skills-content .left a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-    color: crimson;
-    background: none;
-}
-
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
+/* Skills Section */
+.skills {
     display: flex;
-    margin-bottom: 5px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skills-content .right span {
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
+    flex-direction: column;
+    padding: 50px 0;
     position: relative;
 }
-
-.skills .skills-content .right .line::before {
-    content: "";
+.skills-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    position: relative;
+    align-items: start;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.category {
+    margin-bottom: 20px;
+}
+.badge {
+    display: inline-block;
+    background: #d92332;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px 2px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.animated-icons {
     position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(-50%) translateX(0); }
+    50% { transform: translateY(-50%) translateX(10px); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-/* Adjust width of progress bars based on skill percentage */
-.skills-content .right .html::before {
-    width: 90%;
-}
-
-.skills-content .right .css::before {
-    width: 85%;
-}
-
-.skills-content .right .js::before {
-    width: 75%;
-}
-
-.skills-content .right .sql::before {
-    width: 90%;
-}
-
-.skills-content .right .python::before {
-    width: 85%; /* Correct class name for Python skill */
-}
-
-.skills-content .right .java::before {
-    width: 75%;
-}
-
-.skills-content .right .c::before {
-    width: 75%;
-}
 /* Projects section styles */
 .projects .title {
     font-size: 24px;
@@ -486,7 +440,7 @@ section .title::after{
 }
 
 /* Add style for demo link */
-.demo-link {
+.github-link {
     position: absolute;
     bottom: 20px;
     left: 10%;
@@ -500,7 +454,7 @@ section .title::after{
     transition: background-color 0.3s;
 }
 
-.demo-link:hover {
+.github-link:hover {
     background-color: #555;
 }
 

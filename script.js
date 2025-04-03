@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Data Analyst...", "Web Developer..."],
+        strings: ["Data Analyst...", "Full-Stack Developer...", "AI Engineer..."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed2 = new Typed(".typing-2", {
-        strings: ["Data Analyst...", "Web Developer..."],
+        strings: ["Data Analyst...", "Full-Stack Developer...", "AI Engineer..."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -69,5 +69,11 @@ $(document).ready(function(){
                 nav: false
             }
         }
+    });
+
+    // Tooltip for skill badges
+    $('.badge').hover(function(){
+        var skill = $(this).text();
+        $(this).attr('title', 'Proficiency in ' + skill);
     });
 });
