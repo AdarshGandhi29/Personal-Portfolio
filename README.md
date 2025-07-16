@@ -18,7 +18,7 @@ A modern, responsive portfolio web app to showcase projects, skills, and service
 
 - **Landing/Hero:** Eye-catching intro with your name, tagline, and quick links.
 - **About:** Brief summary of your background and what drives you.
-- **Services:** What you offer (e.g., web development, data analysis, AI solutions).
+- **Services:** What you offer (e.g., web development, data analysis, solutions).
 - **Projects:** Gallery of featured projects with descriptions, tech stack, and links.
 - **Skills:** Visual display of your main technologies and strengths.
 - **Contact:** Simple form and social links for easy communication.
@@ -71,10 +71,4 @@ PERSONAL-PORTFOLIO/
 ├── src/            # Source code
 │   ├── components/ # React components
 │   ├── hooks/      # Custom hooks
-│   ├── lib/        # Utilities
-│   ├── pages/      # Page components
-│   └── ...         # Main app files
-├── index.html      # HTML template
-├── package.json    # Project config
-└── ...             # Config & lock files
 ```
